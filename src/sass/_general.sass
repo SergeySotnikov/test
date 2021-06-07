@@ -1,2 +1,149 @@
+.header
+    position: absolute
+    width: 100%
+    padding: 40px 80px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__logo
+        width: 40px
+        height: 40px
+    &__nav
+        .menu
+            margin: 0
+            padding: 0
+            display: flex
+            width: 745px
+            justify-content: space-between
+            align-items: center
+            &__item
+                list-style-type: none
+            &__link
+                font-weight: normal
+                font-size: 16px
+                color: #FFFFFF
+    &__btn
+        height: 44px
+        padding: 10px 30px 10px 30px
+        background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%)
+        border-radius: 50px
+        border: none
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        color: #FFFFFF
 
-  
+
+.main-screen
+    background-image: url(../img/main-screen/main-screen__bgc.jpg)
+    height: 100vh
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+
+
+.about
+    padding-top: 200px
+    &__img 
+        position: relative
+        max-width: 526px
+        border: 30px solid 
+        border-image: linear-gradient(90deg, #C89AFC 0%, #7C6AFA 100%)
+        border-image-slice: 1
+        &::before
+            content: ''
+            display: block
+            padding-top: 94%
+        img
+            position: absolute
+            top: 66px
+            left: 50%
+            transform: translateX(-50%)
+    &__descr 
+        p
+            margin-top: 45px
+            font-weight: normal
+            font-size: 16px
+            color: #FFFFFF
+.start 
+    padding-top: 243px
+    &__info
+        margin-top: 49px
+        p
+            font-weight: normal
+            font-size: 16px
+            color: #FFFFFF
+            opacity: 0.5
+    .progress-bar
+        margin-top: 80px
+        .progress-item
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            height: 273px
+            &__procent  
+                font-weight: bold
+                font-size: 36px
+                color: #FFFFFF
+            &__bar
+                margin-top: 20px
+                height: 80px
+                background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%)
+            &__descr 
+                margin-top: 35px
+                padding-right: 20px
+                font-weight: normal
+                font-size: 14px
+                color: #FFFFFF
+                opacity: 0.5
+        .col-xxl-3:nth-child(2) 
+            .progress-item
+                .progress-item__bar
+                    height: 60px
+        .col-xxl-3:nth-child(3) 
+            .progress-item
+                .progress-item__bar
+                    height: 30px
+        .col-xxl-3:nth-child(4) 
+            .progress-item
+                .progress-item__bar
+                    height: 10px
+.advantages
+    padding-top: 200px
+    .advantages-item
+        margin-top: 120px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &__icon
+            width: 100px
+            height: 100px
+        &__title
+            margin-top: 60px
+            padding: 0 41px
+            text-align: center
+            font-weight: 500
+            font-size: 24px
+            color: #FFFFFF
+        &__descr
+            margin-top: 30px
+            padding: 0 26px
+            text-align: center
+            font-weight: normal
+            font-size: 16px
+            color: #FFFFFF
+            opacity: 0.8
+.partners
+    padding-top: 231px
+    &__wrapper
+        margin-top: 60px
+    &__logo
+        display: flex
+        justify-content: center
+        align-items: center
+        border-right: 1px solid #ffffff5d
+        border-top: 1px solid #ffffff5d
+        padding: 29px 0
