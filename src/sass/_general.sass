@@ -6,22 +6,32 @@
     justify-content: space-between
     align-items: center
     &__logo
-        width: 40px
+        width: 2.3%
         height: 40px
     &__nav
+        width: 72%
         .menu
             margin: 0
             padding: 0
             display: flex
-            width: 745px
-            justify-content: space-between
+            justify-content: flex-end
             align-items: center
             &__item
                 list-style-type: none
+                margin-right: 56px
+                &:last-child
+                    margin-right: 0
             &__link
                 font-weight: normal
                 font-size: 16px
                 color: #FFFFFF
+                text-decoration: none
+                &:hover
+                    text-decoration: underline   
+    &__btn-wrapper
+        width: 25.7%
+        display: flex
+        justify-content: flex-end
     &__btn
         height: 44px
         padding: 10px 30px 10px 30px
@@ -33,8 +43,12 @@
         font-weight: normal
         font-size: 16px
         color: #FFFFFF
-
+        text-decoration: none
+        &:hover
+            color: #FFFFFF
+            background: linear-gradient(270deg, #C89AFC 9.51%, #7C6AFA 90.23%)
 .main-screen
+    padding-top: 84px
     background-image: url(../img/main-screen/main-screen__bgc.jpg)
     height: 100vh
     background-position: center
@@ -146,7 +160,8 @@
     .col-xxl-3:nth-child(4n)
         .partners__logo
             border-right: none
-
+.program
+    padding-top: 153px
 
 
 .teachers
