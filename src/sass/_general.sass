@@ -54,8 +54,35 @@
     background-position: center
     background-repeat: no-repeat
     background-size: cover
-
-
+    .main-title
+        margin-top: 198px
+        font-weight: bold
+        font-size: 64px
+        line-height: 140%
+        color: #FFFFFF
+    .countdown
+        margin-top: 50px
+        display: flex
+        justify-content: space-between
+        &__number
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding: 20px 30px
+            background: #121212
+        &__time
+            font-weight: bold
+            font-size: 36px
+            line-height: 140%
+            color: #FFFFFF
+        &__text
+            font-weight: normal
+            font-size: 16px
+            line-height: 140%
+            text-align: center
+            color: #FFFFFF
+            opacity: 0.4
 
 .about
     padding-top: 200px
@@ -161,9 +188,64 @@
         .partners__logo
             border-right: none
 .program
-    padding-top: 153px
-
-
+    padding-top: 233px
+    .timeline
+        position: relative
+        margin: 0 auto
+        margin-top: 80px
+        max-width: 735px
+        &-item
+            width: 364px
+            text-align: right
+            padding: 0 60px
+            position: relative
+            &__week
+                font-weight: normal
+                font-size: 14px
+                color: #FFFFFF
+                opacity: 0.5
+            &__theme
+                margin-top: 15px
+                font-weight: normal
+                font-size: 18px
+                color: #FFFFFF
+                position: relative
+        &-item-left
+            .timeline-item__theme
+                &:before
+                    content: ''
+                    display: block
+                    position: absolute
+                    width: 40px
+                    height: 1px
+                    opacity: 0.3
+                    background-color: #FFFFFF
+                    top: 5px
+                    right: -60px     
+        &-item-right
+            right: -371px
+            text-align: left
+            .timeline-item__theme
+                &:before
+                    content: ''
+                    display: block
+                    position: absolute
+                    width: 40px
+                    height: 1px
+                    opacity: 0.3
+                    background-color: #FFFFFF
+                    top: 5px
+                    left: -60px
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            width: 6px
+            height: 100%
+            background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%)
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
 .teachers
     padding-top: 231px
     &__wrapper
