@@ -83,7 +83,79 @@
             text-align: center
             color: #FFFFFF
             opacity: 0.4
-
+    &__footer
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 100%
+        padding: 36px 0
+        background-color: #121212
+    &__btn
+        padding: 10px 30px
+        background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%)
+        border-radius: 50px
+        text-decoration: none
+        font-weight: bold
+        font-size: 16px
+        color: #FFFFFF
+        &:hover
+            color: #FFFFFF
+            background: linear-gradient(270deg, #DF5950 11.19%, #451046 93.72%)
+    &__people
+        display: grid
+        grid-template-columns: 80% 20%
+        grid-template-rows: 50% 50%
+        grid-row-gap: 10px
+        p
+            margin: 0
+            font-weight: normal
+            font-size: 16px
+            color: #FFFFFF
+            opacity: 0.4
+        .quantity
+            font-weight: bold
+            font-size: 16px
+            color: #FFFFFF
+    &__money
+        display: flex
+        flex-direction: column
+        .earn
+            display: flex
+            p
+                margin: 0
+                font-weight: normal
+                font-size: 16px
+                color: #FFFFFF
+                opacity: 0.4
+            span
+                margin-left: 30px
+                font-weight: bold
+                font-size: 16px
+                color: #FFFFFF
+        .line
+            position: relative
+            margin-top: 8px
+            width: 100%
+            height: 6px
+            background: #FFFFFF
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                top: 0
+                left: 0
+                height: 100%
+                width: 60%
+                background-image: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%)
+        .value
+            margin-top: 5px
+            display: flex
+            justify-content: space-between
+            span
+                font-weight: normal
+                font-size: 16px
+                color: #FFFFFF
+                opacity: 0.4
 .about
     padding-top: 200px
     &__img 
